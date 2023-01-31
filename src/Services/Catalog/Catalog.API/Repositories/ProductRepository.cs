@@ -9,8 +9,8 @@ namespace Catalog.API.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly ICatalagContext _context;
-        public ProductRepository(ICatalagContext context)
+        private readonly ICatalogContext _context;
+        public ProductRepository(ICatalogContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
